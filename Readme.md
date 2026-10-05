@@ -1,1 +1,1 @@
-dette er en ting some r laget
+# dette er en ting some r laget
