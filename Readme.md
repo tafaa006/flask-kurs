@@ -1,0 +1,1 @@
+dette er en ting some r laget
