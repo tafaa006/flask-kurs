@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+<h1>Velkommen!</h1>
+<p>Denne siden kommer fra en flask-Template</p>
+
+{% if alder <= 18 %}
+    <p>Du er myndig</p>
+{% else %}
+    <p>Du er under 18</p>
+{% endif %}
+
+<img src="Images/Logo.png" alt="et Bilde">
+
+<from method="POST">
+    <label for="navn">Navn</label>
+    <input type="text" id="navn" name="navn">
+
+    <button type="submit">Send</button>
+</from>
+</body>
+</html>
